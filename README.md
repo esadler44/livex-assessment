@@ -1,6 +1,6 @@
 # Frontend Development Challenge: Chatbot Website
 
-# Checkout the [deployment](https://livex-assessment.vercel.app/)!
+# Checkout the 🚀[deployment](https://livex-assessment.vercel.app/)!
 
 ## Setup Instructions
 
