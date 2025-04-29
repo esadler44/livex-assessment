@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Frontend Development Challenge: Chatbot Website
 
-## Getting Started
+**Objective:**  
+Create a responsive website using **React JS** with a chatbot interface, navigation elements, and dynamic content handling.
 
-First, run the development server:
+## Requirements:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Layout:
+- **Navbar:** 
+  - Positioned at the top of the screen.
+  - On the left side, include a "Logo".
+  - On the right side, include a search bar input.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Side Menu:** 
+  - Positioned on the left side of the screen.
+  - Contains menu items: "Apps", "Documents".
+  - When an item is selected, content corresponding to "Apps Page" or "Documents Page" should be displayed on the right side of the screen.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Content Area:**
+  - Each page ("Apps", "Documents") should contain multiple paragraphs of text (using Lorem Ipsum) to ensure the page is scrollable for testing purposes.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Chatbot:
+- **Icon Button:** 
+  - Positioned at the bottom right of the screen, visible on all pages.
+  - Clicking this button opens the chatbot.
 
-## Learn More
+- **Chatbot Window:**
+  - **Dimensions:** Width 400px, Height 600px on desktop views.
+  - **Mobile View:** Full screen when opened on mobile devices.
+  
+  - **Components:**
+    - **Header:** 
+      - Contains two buttons:
+        - **Reset:** Clears all conversation history.
+        - **Close:** Closes the chatbot window.
+      - Displays elapsed time in seconds since opening, updating every second. Reset the timer when the 'Reset' or 'Close' button is clicked.
+    
+    - **Message View:** 
+      - Displays messages in a chat format:
+        - User messages on the right side.
+        - Bot responses on the left side. 
+      - For bot responses, you can use placeholder text or random responses.
 
-To learn more about Next.js, take a look at the following resources:
+    - **Input View:** 
+      - Allows users to type messages.
+      - Messages should be displayed in the message view when the user presses the "Enter" key or clicks the send button.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Functionality:
+- **Interactivity:** 
+  - Menu selection should update the content area.
+  - Chatbot should handle sending messages and responding with mock data or placeholders.
+  - **Search Bar:** 
+    - As the user types text into the search bar, only paragraphs containing the typed text should be shown in the content area.
+    - Highlight the matching text within the paragraphs in the view.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Technical Specifications:
+- **Frameworks/Libraries:** Use **React JS**.
+- **Version Control:** Create a public repository on GitHub for this project. Include a README with setup instructions, how to run the project, and any decisions you made during development.
